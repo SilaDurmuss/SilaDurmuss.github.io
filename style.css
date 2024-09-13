@@ -1,58 +1,81 @@
 body{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
-    font-size: 1.5vw;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-#logo {
+#logo, #footer-logo {
+    color: #5a8aab;
+    margin: 0px;
+    padding: 10px;
+    font-family: "Fredoka One" "sans-serif";
+    white-space: nowrap;
+}
+
+
+#main-header {
+    background-color: #1e3a5f;
     color: white;
-    margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One" sans-serif;
-    width: 16%;
-    text-shadow:
-    1px 1px 0px black,
-    -1px 1px 0px black,
-    1px -1px 0px black,
-    -1px -1px 0px black;
-}
-
-ul {
-    margin: 0px;
+    padding: 10px 0;
+    text-align: center;
 }
 
 body > header{
-    background-color: white;
+    background-color: #1e3a5f;
     display: flex;
     height: 12vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 12vh;
 }
 
-#nav-ul {
-    display: flex;
-}
 
 #nav-ul{
+    display: flex;
     padding: 8px;
-    margin: 16px;
+    margin: 0px;
+    list-style: none;
+}
+
+#nav-ul li {
+    margin-left: 16px;
 }
 
 body > header > nav > ul > li > a{
     list-style: none;
     text-decoration: none;
+    color: white;
 }
 
 .navbutton {
     color: white;
     text-decoration: none;
-    padding: 12px;
+    padding: 12px 24px;
     border: 1px solid white;
-    border-radius: 10%;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #5a8aab;
+}
+
+.navbutton:hover{
+    background-color: #F28C8C;
+    color: white;
+}
+
+body > main {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
 }
 
 body > main article {
-    width: 60%;
+    width: 100%;
     margin: auto;
 }
 
@@ -74,23 +97,108 @@ h2 {
 }
 
 body > footer{
-    background-color: orange;
-    display: flex ;
+    background-color: #1e3a5f;
+    display: flex;
+    position: relative;
+
 }
 
 img {
     border-radius: 10%;
+    display: block;
+    margin: 0;
 }
 
-#footer-ul{
+.follow-container {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+#social-links p {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.instagram-icon {
+    width: 65px;  
+    height: 65px;
+    margin-left: 10px;
+}
+
+.tiktok-icon {
+    width: 65px;  
+    height: 65px;
+}
+
+
+#footer-logo {
+    margin-bottom: 30px;
+    text-align: center;
+    }
+
+
+#footer-ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#footer-ul > div > li {
-    margin-left: 12px;
-}
-#footer-ul > div > li > a{
-    text-decoration: none;
+#footer-text {
     color: white;
+    margin-top: 80px;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-left: 160px;
+}
+
+#header-second {
+    text-align: center;
+}
+
+#header-second img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+#print-button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5a8aab;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#print-button:hover {
+    background-color: #F28C8C;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+ul li, ol li {
+    margin: 10px 0; 
 }
