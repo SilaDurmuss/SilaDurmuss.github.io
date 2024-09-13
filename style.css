@@ -19,7 +19,7 @@ body{
 #main-header {
     background-color: #1e3a5f;
     color: white;
-    padding: 10px 0;
+    padding: 8px 0;
     text-align: center;
 }
 
@@ -29,8 +29,8 @@ body > header{
     height: 12vh;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    height: 12vh;
+    padding: 10px;
+    height: auto;
 }
 
 
@@ -42,7 +42,7 @@ body > header{
 }
 
 #nav-ul li {
-    margin-left: 16px;
+    margin-left: 8px;
 }
 
 body > header > nav > ul > li > a{
@@ -54,11 +54,12 @@ body > header > nav > ul > li > a{
 .navbutton {
     color: white;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 8px 16px;
     border: 1px solid white;
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
     background-color: #5a8aab;
+    font-size: 0.8rem;
 }
 
 .navbutton:hover{
@@ -67,7 +68,7 @@ body > header > nav > ul > li > a{
 }
 
 body > main {
-    max-width: 700px;
+    max-width: 90%;
     margin: 20px auto;
     padding: 20px;
     background: white;
@@ -78,6 +79,7 @@ body > main article {
     width: 100%;
     margin: auto;
 }
+
 
 #main-content {
     display: flex;
@@ -117,7 +119,7 @@ gap: 15px;
 
 #social-links p {
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     margin: 0;
 }
